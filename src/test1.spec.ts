@@ -25,9 +25,7 @@ describe("ProductService Tests", () => {
     });
 
     await adminDataSource.initialize();
-
     const databaseName = "test_" + Math.random().toString(36).substring(7);
-
     await adminDataSource.query(`CREATE DATABASE ${databaseName}`);
     await adminDataSource.destroy();
 

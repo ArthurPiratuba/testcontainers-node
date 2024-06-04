@@ -21,7 +21,7 @@ export function startMysql() {
           //     "./src/test/mysql/init.sql": "/docker-entrypoint-initdb.d/init.sql",
           //   })
           .start();
-          break;
+        break;
       } catch (e) {
         //@ts-ignore
         if (!e.message.includes("port is already allocated")) {
